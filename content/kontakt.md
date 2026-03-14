@@ -6,7 +6,7 @@ layout: page
   <img src="/michael.png" alt="Michael Schmidle" class="avatar" />
   <div class="kontakt-info">
     <h1>Michael Schmidle</h1>
-    <p class="role">Spielleiter-Verantwortlicher<br>FC Luzern Frauen · Kinderfussball</p>
+    <p class="role">Verantwortlicher für Spielleiter:innen<br>FC Luzern Frauen</p>
     <div class="kontakt-details">
       <a href="tel:+41791013787">📞 079 101 37 87</a>
       <a href="mailto:michael@schmidle.net">✉️ michael@schmidle.net</a>
@@ -24,6 +24,7 @@ layout: page
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   margin-top: 24px;
+  max-width: 640px;
 }
 
 .avatar {

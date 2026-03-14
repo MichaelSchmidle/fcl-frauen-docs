@@ -1,7 +1,7 @@
 # Checkliste
 
 ::: tip Goldene Regel
-**Sicheres, faires und flüssiges Spiel — regelklar, ruhig, respektvoll.**
+**Sicheres, faires und flüssiges Spiel – regelklar, ruhig, respektvoll.**
 Lieber früh deeskalieren als spät reparieren.
 :::
 
@@ -64,7 +64,7 @@ Folgendes konsequent unterbinden:
 
 ## Gute Pfiffe
 
-Laut genug, dass man dich von der Seitenlinie hört — lieber zu laut als zu leise.
+Laut genug, dass man dich von der Seitenlinie hört – lieber zu laut als zu leise.
 
 ### Pfeifensprache
 

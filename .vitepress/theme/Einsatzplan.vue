@@ -183,7 +183,6 @@ function badgeClass(m) {
 
 <style scoped>
 .einsatzplan {
-  max-width: 640px;
 }
 
 .updated {

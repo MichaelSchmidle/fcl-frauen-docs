@@ -3,7 +3,7 @@ layout: home
 hero:
   name: "Spielleitung"
   text: "FC Luzern Frauen"
-  tagline: "Alles was du als Spielleiter:in brauchst — an einem Ort."
+  tagline: "Alles was du als Spielleiter:in brauchst – an einem Ort."
   actions:
     - theme: brand
       text: Einsatzplan
