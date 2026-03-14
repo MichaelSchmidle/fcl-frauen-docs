@@ -1,6 +1,9 @@
 # Checkliste
 
-Dein Job in einem Satz: Du sorgst für ein **sicheres, faires und flüssiges Spiel** – regelklar, ruhig, respektvoll.
+::: tip Goldene Regel
+**Sicheres, faires und flüssiges Spiel — regelklar, ruhig, respektvoll.**
+Lieber früh deeskalieren als spät reparieren.
+:::
 
 ## Vorbereitung
 
@@ -58,10 +61,6 @@ Folgendes konsequent unterbinden:
 - Mit Begleitung von der Seitenlinie
 - Wertschätzung, Feedback und Tipps nach dem Spiel
 - Solo-Einsätze erst, wenn du dich bereit genug fühlst
-
-## Goldene Regel
-
-**Konsequent, ruhig, respektvoll.** Lieber früh deeskalieren als spät reparieren.
 
 ## Gute Pfiffe
 

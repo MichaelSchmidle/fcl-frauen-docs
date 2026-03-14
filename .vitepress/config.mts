@@ -4,6 +4,7 @@ export default defineConfig({
   title: "FCL Frauen",
   cleanUrls: true,
   description: "Spielleitung beim FC Luzern Frauen",
+  lang: 'de-CH',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/fcl-logo.svg' }],
     ['meta', { name: 'theme-color', content: '#00519e' }],
@@ -13,7 +14,9 @@ export default defineConfig({
     logo: '/fcl-logo.svg',
     siteTitle: 'Spielleitung',
 
-    nav: [],
+    nav: [
+      { text: 'Kontakt', link: '/kontakt' },
+    ],
 
     sidebar: [
       {
@@ -33,6 +36,19 @@ export default defineConfig({
     footer: {
       message: 'FC Luzern Frauen · Spielleitung',
     },
+
+    outline: {
+      label: 'Auf dieser Seite',
+    },
+
+    docFooter: {
+      prev: 'Vorherige Seite',
+      next: 'Nächste Seite',
+    },
+
+    darkModeSwitchLabel: 'Darstellung',
+    sidebarMenuLabel: 'Menü',
+    returnToTopLabel: 'Nach oben',
   },
   srcDir: './content',
 })

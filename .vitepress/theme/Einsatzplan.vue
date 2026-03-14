@@ -213,29 +213,27 @@ function badgeClass(m) {
 }
 
 .filter-btn {
-  padding: 6px 16px;
-  border-radius: 20px;
-  border: 1px solid var(--vp-c-divider);
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
   background: var(--vp-c-bg-soft);
   color: var(--vp-c-text-2);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .filter-btn.active {
-  background: var(--vp-c-brand-1);
-  color: white;
-  border-color: var(--vp-c-brand-1);
-}
-
-.dark .filter-btn.active {
-  color: #1a1a1a;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border-color: transparent;
 }
 
 .filter-btn:hover:not(.active) {
-  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
   color: var(--vp-c-brand-1);
 }
 
