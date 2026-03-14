@@ -31,7 +31,7 @@ Lieber früh deeskalieren als spät reparieren.
 - **Sicherheit zuerst** (bei Verletzung, gefährlichem Spiel oder Eskalation unterbrechen)
 - Ball vor der Brust
 - Ständig in der Nähe zum Geschehen bleiben
-- [Klar kommunizieren](#Klare-Kommunikation) (laut pfeifen, deutlich anzeigen), Diskussionen unterbinden
+- [Klar kommunizieren](#klare-kommunikation) (laut pfeifen, deutlich anzeigen), Diskussionen unterbinden
 - Regelklar + pädagogisch (z.B. einmalige Wiederholung bei falschem Einwurf)
 - Zu deinen (auch falschen) Entscheidungen stehen
 
