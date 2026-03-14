@@ -4,10 +4,10 @@
 
 ## Michael Schmidle
 
-Verantwortlicher für Spielleiter:innen
+Verantwortlicher für Spielleiter:innen<br>
 FC Luzern Frauen
 
-📞 [079 101 37 87](tel:+41791013787)
+📞 [079 101 37 87](tel:+41791013787)<br>
 ✉️ [michael@schmidle.net](mailto:michael@schmidle.net)
 
 </MediaObject>
