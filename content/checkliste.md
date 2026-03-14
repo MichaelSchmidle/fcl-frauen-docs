@@ -31,7 +31,7 @@ Lieber früh deeskalieren als spät reparieren.
 - **Sicherheit zuerst** (bei Verletzung, gefährlichem Spiel oder Eskalation unterbrechen)
 - Ball vor der Brust
 - Ständig in der Nähe zum Geschehen bleiben
-- Klar kommunizieren (laut pfeifen, deutlich anzeigen), Diskussionen unterbinden
+- [Klar kommunizieren](#Klare-Kommunikation) (laut pfeifen, deutlich anzeigen), Diskussionen unterbinden
 - Regelklar + pädagogisch (z.B. einmalige Wiederholung bei falschem Einwurf)
 - Zu deinen (auch falschen) Entscheidungen stehen
 
@@ -62,14 +62,14 @@ Folgendes konsequent unterbinden:
 - Wertschätzung, Feedback und Tipps nach dem Spiel
 - Solo-Einsätze erst, wenn du dich bereit genug fühlst
 
-## Gute Pfiffe
-
-Laut genug, dass man dich von der Seitenlinie hört – lieber zu laut als zu leise.
+## Klare Kommunikation
 
 ### Pfeifensprache
 
-| Signal | Pfiff |
-|---|---|
+Laut genug, dass man dich von der Seitenlinie hört – lieber zu laut als zu leise.
+
+| Situation | Pfiff |
+|-----------|-------|
 | Anpfiff | 2× lang |
 | Abpfiff | 3× lang |
 | Foul / Fehler / Wiederanpfiff | 1× kurz |
@@ -78,10 +78,10 @@ Laut genug, dass man dich von der Seitenlinie hört – lieber zu laut als zu le
 ### Körpersprache
 
 | Situation | Geste |
-|---|---|
-| Freistoss / Einwurf | Ein Arm erhoben in neue Spielrichtung, zweiter auf den Ort |
+|-----------|-------|
+| Freistoss / Einwurf | Ein Arm in neue Spielrichtung, zweiter auf den Ausführungspunkt |
 | Ecke | Niedriger Arm zur Ecke |
-| Goalie-Ball | Beide Arme zum Goalie |
-| Strafstoss | Arm auf den Strafraumpunkt |
-| Tor | Ein Arm auf den Mittelkreis |
-| Abpfiff | Beide Arme auf den Mittelkreis |
+| Goalie-Ball | Beide Arme zur/zum Goalie |
+| Strafstoss | Arm zum Strafraumpunkt |
+| Tor | Ein Arm zum Mittelkreis |
+| Abpfiff | Beide Arme zum Mittelkreis |
