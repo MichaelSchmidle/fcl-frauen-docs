@@ -20,7 +20,6 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Spielleitung',
         items: [
           { text: 'Einsatzplan', link: '/einsatzplan' },
           { text: 'Checkliste', link: '/checkliste' },
