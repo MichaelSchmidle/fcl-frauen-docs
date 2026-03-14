@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "FC Luzern Frauen · Spielleitung",
   cleanUrls: true,
-  description: "Spielleitung beim FC Luzern Frauen",
+  description: "Alles was du als Spielleiter:in beim FCL Frauen brauchst – an einem Ort.",
   lang: 'de-CH',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/fcl-logo.svg' }],
