@@ -15,14 +15,12 @@ hero:
       text: Ausrüstung
       link: /ausruestung
 features:
-  - title: "💰 CHF 40.-- pro Spiel"
-    details: "Dein Einsatz wird belohnt."
+  - title: "💰 CHF 40.- pro Spiel"
+    details: "Dein Einsatz wird belohnt"
   - title: "👕 Bezahlte Ausrüstung"
-    details: "Alles was du brauchst, auf uns."
+    details: "Alles was du brauchst, auf uns"
+  - title: "🙋 Einführung, Begleitung und Support"
+    details: "Wir stärken dir den Rücken"
   - title: "⚽ Mittendrin statt nur am Rand"
-    details: "Verantwortung auf dem Platz."
-  - title: "🌟 Echte Führungserfahrung"
-    details: "Wächst mit dir — auch neben dem Platz."
-  - title: "🤝 Teil eines starken Teams"
-    details: "Gemeinsam mehr erreichen."
+    details: "Du leitest das Spiel – und wächst daran"
 ---

@@ -31,7 +31,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'FC Luzern Frauen',
+      message: 'FC Luzern Frauen · Spielleitung',
     },
   },
   srcDir: './content',
