@@ -1,10 +1,40 @@
 {
-  "updatedAt": "2026-03-14 21:33",
+  "updatedAt": "2026-03-14 21:54",
   "pool": [
     "MS",
     "UP"
   ],
   "matches": [
+    {
+      "datum": "2026-03-07",
+      "zeit": "09:30",
+      "isoDate": "2026-03-07T09:30:00",
+      "displayDate": "Sa 07.03.",
+      "displayTime": "09:30",
+      "team": "FF14/9",
+      "gegner": "FC Wiedikon ZH a",
+      "wettbewerb": "Trainingsspiele",
+      "ort": "Allmend Süd",
+      "spielleiter": "MS",
+      "backup": "",
+      "durationMin": 80,
+      "parallel": false
+    },
+    {
+      "datum": "2026-03-07",
+      "zeit": "11:45",
+      "isoDate": "2026-03-07T11:45:00",
+      "displayDate": "Sa 07.03.",
+      "displayTime": "11:45",
+      "team": "D/9",
+      "gegner": "Niederamt Selection/Aarau Frauen",
+      "wettbewerb": "Trainingsspiele",
+      "ort": "Allmend Süd",
+      "spielleiter": "MS",
+      "backup": "",
+      "durationMin": 60,
+      "parallel": false
+    },
     {
       "datum": "2026-03-14",
       "zeit": "09:30",
@@ -17,7 +47,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-03-14",
@@ -31,7 +62,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "UP",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-03-21",
@@ -45,7 +77,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-03-21",
@@ -59,7 +92,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": true
     },
     {
       "datum": "2026-03-21",
@@ -73,7 +107,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-03-28",
@@ -87,7 +122,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-04-11",
@@ -101,7 +137,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": false
     },
     {
       "datum": "2026-04-18",
@@ -115,7 +152,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-04-23",
@@ -129,7 +167,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-04-25",
@@ -143,7 +182,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": false
     },
     {
       "datum": "2026-05-02",
@@ -157,7 +197,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-05-09",
@@ -171,7 +212,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": true
     },
     {
       "datum": "2026-05-09",
@@ -185,7 +227,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-05-16",
@@ -199,7 +242,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-05-30",
@@ -213,7 +257,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": true
     },
     {
       "datum": "2026-05-30",
@@ -227,7 +272,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-06-03",
@@ -241,7 +287,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-06-06",
@@ -255,7 +302,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": false
     },
     {
       "datum": "2026-06-13",
@@ -269,7 +317,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 60
+      "durationMin": 60,
+      "parallel": true
     },
     {
       "datum": "2026-06-13",
@@ -283,7 +332,8 @@
       "ort": "Allmend Süd",
       "spielleiter": "",
       "backup": "",
-      "durationMin": 80
+      "durationMin": 80,
+      "parallel": true
     }
   ]
 }

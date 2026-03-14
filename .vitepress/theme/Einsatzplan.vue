@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 
 const data = ref(null)
 const filter = ref('')
+const showPast = ref(false)
 const loading = ref(true)
 
 onMounted(async () => {
@@ -16,13 +17,25 @@ onMounted(async () => {
   }
 })
 
-const matches = computed(() => {
+const today = new Date().toISOString().slice(0, 10)
+
+const upcomingMatches = computed(() => {
   if (!data.value) return []
-  const all = data.value.matches
-  if (!filter.value) return all
-  return all.filter(m =>
-    m.spielleiter === filter.value || m.backup === filter.value
-  )
+  let all = data.value.matches.filter(m => m.datum >= today)
+  if (filter.value) {
+    all = all.filter(m => m.spielleiter === filter.value || m.backup === filter.value)
+  }
+  return all
+})
+
+const pastMatches = computed(() => {
+  if (!data.value) return []
+  let all = data.value.matches.filter(m => m.datum < today)
+  if (filter.value) {
+    all = all.filter(m => m.spielleiter === filter.value || m.backup === filter.value)
+  }
+  // Reverse: most recent first
+  return [...all].reverse()
 })
 
 const pool = computed(() => data.value?.pool || [])
@@ -30,7 +43,6 @@ const updatedAt = computed(() => data.value?.updatedAt || '')
 
 function icsUrl(m) {
   const start = m.isoDate.replace(/[-:]/g, '').replace('T', 'T') + '00'
-  // Calculate end time
   const startDate = new Date(m.isoDate)
   const endDate = new Date(startDate.getTime() + m.durationMin * 60000)
   const end = endDate.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '').replace('Z', '')
@@ -67,30 +79,40 @@ function badgeClass(m) {
     <div v-if="loading" class="loading">Lade Einsatzplan...</div>
 
     <template v-else-if="data">
+      <p class="updated">Aktualisiert: {{ updatedAt }}</p>
+
       <!-- Filter -->
-      <div class="filter-bar">
-        <button
-          :class="['filter-btn', { active: filter === '' }]"
-          @click="filter = ''"
-        >Alle</button>
-        <button
-          v-for="p in pool"
-          :key="p"
-          :class="['filter-btn', { active: filter === p }]"
-          @click="filter = filter === p ? '' : p"
-        >{{ p }}</button>
+      <div class="filter-section">
+        <span class="filter-label">Filter</span>
+        <div class="filter-bar">
+          <button
+            :class="['filter-btn', { active: filter === '' }]"
+            @click="filter = ''"
+          >Alle</button>
+          <button
+            v-for="p in pool"
+            :key="p"
+            :class="['filter-btn', { active: filter === p }]"
+            @click="filter = filter === p ? '' : p"
+          >{{ p }}</button>
+        </div>
       </div>
 
-      <!-- Matches -->
-      <div v-if="matches.length === 0" class="empty">
-        Keine Einsätze{{ filter ? ` für ${filter}` : '' }} gefunden.
+      <!-- Upcoming matches -->
+      <div v-if="upcomingMatches.length === 0" class="empty">
+        Keine kommenden Einsätze{{ filter ? ` für ${filter}` : '' }}.
       </div>
 
-      <div v-for="m in matches" :key="`${m.datum}-${m.zeit}-${m.team}`" class="match-card">
+      <div
+        v-for="m in upcomingMatches"
+        :key="`${m.datum}-${m.zeit}-${m.team}`"
+        :class="['match-card', { parallel: m.parallel }]"
+      >
         <div class="match-header">
           <div class="match-date">
             <span class="day">{{ m.displayDate }}</span>
             <span class="time">{{ m.displayTime }}</span>
+            <span v-if="m.parallel" class="parallel-tag">⚡</span>
           </div>
           <span :class="badgeClass(m)">
             {{ m.spielleiter || 'offen' }}
@@ -105,18 +127,48 @@ function badgeClass(m) {
           </div>
           <div class="meta">
             {{ m.wettbewerb }} · {{ m.ort }}
+            <template v-if="m.backup"> · Backup: {{ m.backup }}</template>
+            · <a :href="icsUrl(m)" download="spielleitung.ics" class="cal-link">📅 Kalender</a>
           </div>
-        </div>
-
-        <div class="match-footer">
-          <span v-if="m.backup" class="backup">Backup: {{ m.backup }}</span>
-          <a :href="icsUrl(m)" download="spielleitung.ics" class="cal-link" title="Zum Kalender hinzufügen">
-            📅 Kalender
-          </a>
         </div>
       </div>
 
-      <p class="updated">Aktualisiert: {{ updatedAt }}</p>
+      <!-- Past matches toggle -->
+      <div v-if="pastMatches.length > 0" class="past-section">
+        <button class="past-toggle" @click="showPast = !showPast">
+          {{ showPast ? '▾' : '▸' }} Vergangene Spiele ({{ pastMatches.length }})
+        </button>
+
+        <template v-if="showPast">
+          <div
+            v-for="m in pastMatches"
+            :key="`past-${m.datum}-${m.zeit}-${m.team}`"
+            class="match-card past"
+          >
+            <div class="match-header">
+              <div class="match-date">
+                <span class="day">{{ m.displayDate }}</span>
+                <span class="time">{{ m.displayTime }}</span>
+              </div>
+              <span :class="badgeClass(m)">
+                {{ m.spielleiter || 'offen' }}
+              </span>
+            </div>
+
+            <div class="match-body">
+              <div class="teams">
+                <span class="team-home">{{ m.team }}</span>
+                <span class="vs">vs</span>
+                <span class="team-away">{{ m.gegner }}</span>
+              </div>
+              <div class="meta">
+                {{ m.wettbewerb }} · {{ m.ort }}
+                <template v-if="m.backup"> · Backup: {{ m.backup }}</template>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
     </template>
 
     <div v-else class="error">Einsatzplan konnte nicht geladen werden.</div>
@@ -128,10 +180,29 @@ function badgeClass(m) {
   max-width: 640px;
 }
 
+.updated {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--vp-c-text-3);
+  margin-bottom: 8px;
+}
+
 .filter-bar {
   display: flex;
   gap: 8px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -165,8 +236,8 @@ function badgeClass(m) {
 .match-card {
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
   background: var(--vp-c-bg-soft);
   transition: border-color 0.2s;
 }
@@ -175,17 +246,25 @@ function badgeClass(m) {
   border-color: var(--vp-c-brand-soft);
 }
 
+.match-card.parallel {
+  border-left: 3px solid #ff8c00;
+}
+
+.match-card.past {
+  opacity: 0.55;
+}
+
 .match-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .match-date {
   display: flex;
   gap: 8px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .day {
@@ -198,6 +277,11 @@ function badgeClass(m) {
   font-size: 14px;
   color: var(--vp-c-text-2);
   font-weight: 600;
+}
+
+.parallel-tag {
+  font-size: 14px;
+  title: "Parallelspiel";
 }
 
 .badge {
@@ -220,9 +304,9 @@ function badgeClass(m) {
 }
 
 .teams {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .team-home {
@@ -233,7 +317,7 @@ function badgeClass(m) {
   color: var(--vp-c-text-3);
   margin: 0 6px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .team-away {
@@ -243,24 +327,10 @@ function badgeClass(m) {
 .meta {
   font-size: 13px;
   color: var(--vp-c-text-3);
-}
-
-.match-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--vp-c-divider);
-}
-
-.backup {
-  font-size: 13px;
-  color: var(--vp-c-text-3);
+  line-height: 1.5;
 }
 
 .cal-link {
-  font-size: 13px;
   color: var(--vp-c-brand-1);
   text-decoration: none;
   font-weight: 600;
@@ -270,11 +340,26 @@ function badgeClass(m) {
   text-decoration: underline;
 }
 
-.updated {
-  font-size: 12px;
-  color: var(--vp-c-text-3);
-  margin-top: 20px;
-  text-align: right;
+/* Past section */
+.past-section {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.past-toggle {
+  background: none;
+  border: none;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-bottom: 12px;
+}
+
+.past-toggle:hover {
+  color: var(--vp-c-text-1);
 }
 
 .loading, .empty, .error {
