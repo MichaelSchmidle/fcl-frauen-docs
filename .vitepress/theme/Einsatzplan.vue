@@ -44,7 +44,8 @@ const updatedAt = computed(() => data.value?.updatedAt || '')
 function icsUrl(m) {
   const start = m.isoDate.replace(/[-:]/g, '').replace('T', 'T') + '00'
   const startDate = new Date(m.isoDate)
-  const endDate = new Date(startDate.getTime() + m.durationMin * 60000)
+  // 90 min: covers match + buffer
+  const endDate = new Date(startDate.getTime() + 90 * 60000)
   const end = endDate.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '').replace('Z', '')
 
   const title = `Spielleitung: ${m.team} vs ${m.gegner}`
@@ -61,6 +62,11 @@ function icsUrl(m) {
     `SUMMARY:${title}`,
     `LOCATION:${location}`,
     `DESCRIPTION:${desc}`,
+    'BEGIN:VALARM',
+    'TRIGGER:-PT2H',
+    'ACTION:DISPLAY',
+    'DESCRIPTION:Spielleitung in 2 Stunden',
+    'END:VALARM',
     'END:VEVENT',
     'END:VCALENDAR'
   ].join('\r\n')
