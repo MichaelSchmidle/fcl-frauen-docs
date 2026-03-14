@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "FCL Frauen · Spielleitung",
+  title: "FCL Frauen",
   cleanUrls: true,
-  description: "Alles rund um die Spielleitung im Kinderfussball des FC Luzern Frauen",
+  description: "Spielleitung beim FC Luzern Frauen",
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/fcl-logo.svg' }],
     ['meta', { name: 'theme-color', content: '#00519e' }],
@@ -11,21 +11,17 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/fcl-logo.svg',
+    siteTitle: 'Spielleitung',
 
-    nav: [
-      { text: 'Checkliste', link: '/checkliste' },
-      { text: 'Ausrüstung', link: '/ausruestung' },
-      { text: 'Einsatzplan', link: '/einsatzplan' },
-    ],
+    nav: [],
 
     sidebar: [
       {
         text: 'Spielleitung',
         items: [
-          { text: 'Willkommen', link: '/' },
+          { text: 'Einsatzplan', link: '/einsatzplan' },
           { text: 'Checkliste', link: '/checkliste' },
           { text: 'Ausrüstung', link: '/ausruestung' },
-          { text: 'Einsatzplan', link: '/einsatzplan' },
         ]
       },
     ],
@@ -35,7 +31,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'FC Luzern Frauen · Kinderfussball',
+      message: 'FC Luzern Frauen',
     },
   },
   srcDir: './content',
