@@ -33,7 +33,7 @@ Lieber früh deeskalieren als spät reparieren.
 - Ständig in der Nähe zum Geschehen bleiben
 - [Klar kommunizieren](#klare-kommunikation) (laut pfeifen, deutlich anzeigen), Diskussionen unterbinden
 - Regelklar + pädagogisch (z.B. einmalige Wiederholung bei falschem Einwurf)
-- Zu deinen (auch falschen) Entscheidungen stehen
+- Zu deinen Entscheidungen stehen
 
 ## Wenn's kippt
 
