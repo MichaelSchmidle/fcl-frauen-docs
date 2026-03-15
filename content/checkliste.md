@@ -13,7 +13,7 @@ Lieber früh deeskalieren als spät reparieren.
 
 ## Vor Ort
 
-- Platz, Markierungen und Spielball kurz prüfen (Heim-Trainer:innen müssen Probleme lösen)
+- Platz, Markierungen, Tornetze und Spielball kurz prüfen (Heim-Trainer:innen müssen Probleme lösen)
 - Begrüssung der Coaches auf beiden Seiten
 - Team-Check: Schienbeinschoner, Stollen, Schmuck
 - Kurzbriefing: dein Name, deine Erwartungen (Sicherheit, Fairplay)
