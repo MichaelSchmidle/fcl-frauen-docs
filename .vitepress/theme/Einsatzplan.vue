@@ -120,9 +120,14 @@ function badgeClass(m) {
             <span class="time">{{ m.displayTime }}</span>
             <span v-if="m.parallel" class="parallel-tag">⚡</span>
           </div>
-          <span :class="badgeClass(m)">
-            {{ m.spielleiter || 'offen' }}
-          </span>
+          <div class="badge-group">
+            <span :class="badgeClass(m)">
+              {{ m.spielleiter || 'offen' }}
+            </span>
+            <span v-if="m.backup" class="badge backup">
+              {{ m.backup }}
+            </span>
+          </div>
         </div>
 
         <div class="match-body">
@@ -133,10 +138,16 @@ function badgeClass(m) {
           </div>
           <div class="meta">
             {{ m.wettbewerb }} · {{ m.ort }}
-            <template v-if="m.backup"> · Backup: {{ m.backup }}</template>
             · <a :href="icsUrl(m)" download="spielleitung.ics" class="cal-link">📅 Kalender</a>
           </div>
         </div>
+      </div>
+
+      <!-- Legend -->
+      <div v-if="upcomingMatches.length > 0" class="legend">
+        <span class="legend-item"><span class="legend-swatch parallel-swatch"></span> ⚡ = Parallelspiel (gleichzeitiger Anpfiff)</span>
+        <span class="legend-item"><span class="badge assigned legend-badge">MS</span> = Spielleiter:in</span>
+        <span class="legend-item"><span class="badge backup legend-badge">MS</span> = Backup</span>
       </div>
 
       <!-- Past matches toggle -->
@@ -156,9 +167,14 @@ function badgeClass(m) {
                 <span class="day">{{ m.displayDate }}</span>
                 <span class="time">{{ m.displayTime }}</span>
               </div>
-              <span :class="badgeClass(m)">
-                {{ m.spielleiter || 'offen' }}
-              </span>
+              <div class="badge-group">
+                <span :class="badgeClass(m)">
+                  {{ m.spielleiter || 'offen' }}
+                </span>
+                <span v-if="m.backup" class="badge backup">
+                  {{ m.backup }}
+                </span>
+              </div>
             </div>
 
             <div class="match-body">
@@ -169,7 +185,6 @@ function badgeClass(m) {
               </div>
               <div class="meta">
                 {{ m.wettbewerb }} · {{ m.ort }}
-                <template v-if="m.backup"> · Backup: {{ m.backup }}</template>
               </div>
             </div>
           </div>
@@ -296,9 +311,21 @@ function badgeClass(m) {
   letter-spacing: 0.5px;
 }
 
+.badge-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
 .badge.assigned {
   background: var(--vp-c-brand-soft);
   color: var(--vp-c-brand-1);
+}
+
+.badge.backup {
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-3);
+  border: 1px solid var(--vp-c-divider);
 }
 
 .badge.open {
@@ -341,6 +368,38 @@ function badgeClass(m) {
 
 .cal-link:hover {
   text-decoration: underline;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0 8px;
+  padding: 10px 14px;
+  background: var(--vp-c-bg-soft);
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-badge {
+  font-size: 10px;
+  padding: 1px 6px;
+}
+
+.legend-swatch.parallel-swatch {
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background: #ff8c00;
+  border-radius: 2px;
 }
 
 /* Past section */

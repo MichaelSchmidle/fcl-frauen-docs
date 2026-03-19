@@ -1,7 +1,8 @@
 {
-  "updatedAt": "2026-03-19 10:38",
+  "updatedAt": "2026-03-19 11:54",
   "pool": [
     "BW",
+    "JL",
     "MM",
     "MS",
     "UP"
@@ -78,7 +79,7 @@
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
       "spielleiter": "MM",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
@@ -107,8 +108,8 @@
       "gegner": "Team Region Entlebuch",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "MS",
-      "backup": "",
+      "spielleiter": "JL",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": true
     },
