@@ -1,6 +1,7 @@
 {
-  "updatedAt": "2026-03-16 08:30",
+  "updatedAt": "2026-03-19 10:38",
   "pool": [
+    "BW",
     "MM",
     "MS",
     "UP"
@@ -76,7 +77,7 @@
       "gegner": "SG Root/Ebikon 7er",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MM",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -91,7 +92,7 @@
       "gegner": "FC Küssnacht a/R Mädchen",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "BW",
       "backup": "",
       "durationMin": 60,
       "parallel": true
@@ -106,7 +107,7 @@
       "gegner": "Team Region Entlebuch",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "MM",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 80,
       "parallel": true
