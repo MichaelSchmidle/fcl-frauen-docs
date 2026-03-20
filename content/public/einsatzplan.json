@@ -1,7 +1,6 @@
 {
-  "updatedAt": "2026-03-20 08:30",
+  "updatedAt": "2026-03-21 00:17",
   "pool": [
-    "BW",
     "JL",
     "MM",
     "MS",
@@ -93,7 +92,7 @@
       "gegner": "FC Küssnacht a/R Mädchen",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "BW",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 60,
       "parallel": true
@@ -109,7 +108,7 @@
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
       "spielleiter": "JL",
-      "backup": "MS",
+      "backup": "UP",
       "durationMin": 80,
       "parallel": true
     },
