@@ -133,7 +133,7 @@ function badgeClass(m) {
         <div class="match-body">
           <div class="teams">
             <span class="team-home">{{ m.team }}</span>
-            <span class="vs">vs</span>
+            <span class="vs"> vs </span>
             <span class="team-away">{{ m.gegner }}</span>
           </div>
           <div class="meta">
@@ -180,7 +180,7 @@ function badgeClass(m) {
             <div class="match-body">
               <div class="teams">
                 <span class="team-home">{{ m.team }}</span>
-                <span class="vs">vs</span>
+                <span class="vs"> vs </span>
                 <span class="team-away">{{ m.gegner }}</span>
               </div>
               <div class="meta">
