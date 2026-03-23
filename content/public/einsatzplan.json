@@ -1,9 +1,11 @@
 {
-  "updatedAt": "2026-03-23 10:08",
+  "updatedAt": "2026-03-23 19:01",
   "pool": [
+    "GS",
     "JL",
     "MM",
     "MS",
+    "PH",
     "UP"
   ],
   "matches": [
@@ -122,7 +124,7 @@
       "gegner": "SG Root/Ebikon 9er",
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "GS",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -137,7 +139,7 @@
       "gegner": "FC Kickers Luzern D9d",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MM",
       "backup": "",
       "durationMin": 60,
       "parallel": false
@@ -152,7 +154,7 @@
       "gegner": "SG Root/Ebikon 9er",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "JL",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -167,7 +169,7 @@
       "gegner": "FC Küssnacht a/R",
       "wettbewerb": "Cup",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "PH",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -182,7 +184,7 @@
       "gegner": "SC Emmen e",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "JL",
       "backup": "",
       "durationMin": 60,
       "parallel": false
@@ -197,7 +199,7 @@
       "gegner": "FC Aegeri D9-FF14",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MM",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -212,7 +214,7 @@
       "gegner": "FC Stans Bürgensto",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "PH",
       "backup": "",
       "durationMin": 60,
       "parallel": true
@@ -227,7 +229,7 @@
       "gegner": "FC Baar FF-14 a",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "JL",
       "backup": "",
       "durationMin": 80,
       "parallel": true
@@ -242,7 +244,7 @@
       "gegner": "FC Sursee gold",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -257,7 +259,7 @@
       "gegner": "FC Meggen Schloss",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 60,
       "parallel": true
@@ -272,7 +274,7 @@
       "gegner": "SC Schwyz (7vs7)",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "UP",
       "backup": "",
       "durationMin": 80,
       "parallel": true
@@ -287,7 +289,7 @@
       "gegner": "FC Aegeri D7-FF14-b",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "GS",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -302,7 +304,7 @@
       "gegner": "Weggiser SC",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 80,
       "parallel": false
@@ -317,7 +319,7 @@
       "gegner": "FC Altdorf c",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "GS",
       "backup": "",
       "durationMin": 60,
       "parallel": true
@@ -332,7 +334,7 @@
       "gegner": "SG Root/Ebikon 7er",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "",
+      "spielleiter": "MM",
       "backup": "",
       "durationMin": 80,
       "parallel": true
