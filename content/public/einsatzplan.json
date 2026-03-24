@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-23 19:01",
+  "updatedAt": "2026-03-24 12:44",
   "pool": [
     "GS",
     "JL",
@@ -125,7 +125,7 @@
       "wettbewerb": "Trainingsspiele",
       "ort": "Allmend Süd",
       "spielleiter": "GS",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
@@ -139,7 +139,7 @@
       "gegner": "FC Kickers Luzern D9d",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "MM",
+      "spielleiter": "MS",
       "backup": "",
       "durationMin": 60,
       "parallel": false
@@ -155,7 +155,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "JL",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
@@ -170,7 +170,7 @@
       "wettbewerb": "Cup",
       "ort": "Allmend Süd",
       "spielleiter": "PH",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
@@ -185,7 +185,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "JL",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 60,
       "parallel": false
     },
@@ -200,7 +200,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "MM",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
@@ -215,7 +215,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "PH",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 60,
       "parallel": true
     },
@@ -290,7 +290,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "GS",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 80,
       "parallel": false
     },
