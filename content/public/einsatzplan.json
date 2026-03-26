@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-26 07:40",
+  "updatedAt": "2026-03-26 08:21",
   "pool": [
     "GS",
     "JL",
@@ -140,7 +140,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "JL",
-      "backup": "",
+      "backup": "MS",
       "durationMin": 60,
       "parallel": false
     },
