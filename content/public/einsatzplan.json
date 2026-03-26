@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-26 18:26",
+  "updatedAt": "2026-03-26 18:35",
   "pool": [
     "GS",
     "JL",
@@ -247,7 +247,22 @@
       "spielleiter": "PH",
       "backup": "MS",
       "durationMin": 60,
-      "parallel": false
+      "parallel": true
+    },
+    {
+      "datum": "2026-05-09",
+      "zeit": "09:30",
+      "isoDate": "2026-05-09T09:30:00",
+      "displayDate": "Sa 09.05.26",
+      "displayTime": "09:30",
+      "team": "FF14/7",
+      "gegner": "FC Baar FF-14 a",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "JL",
+      "backup": "",
+      "durationMin": 80,
+      "parallel": true
     },
     {
       "datum": "2026-05-16",
@@ -277,6 +292,36 @@
       "spielleiter": "MS",
       "backup": "",
       "durationMin": 60,
+      "parallel": true
+    },
+    {
+      "datum": "2026-05-30",
+      "zeit": "09:30",
+      "isoDate": "2026-05-30T09:30:00",
+      "displayDate": "Sa 30.05.26",
+      "displayTime": "09:30",
+      "team": "FF14/7",
+      "gegner": "SC Schwyz (7vs7)",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "UP",
+      "backup": "",
+      "durationMin": 80,
+      "parallel": true
+    },
+    {
+      "datum": "2026-06-03",
+      "zeit": "18:00",
+      "isoDate": "2026-06-03T18:00:00",
+      "displayDate": "Mi 03.06.26",
+      "displayTime": "18:00",
+      "team": "FF14/7",
+      "gegner": "FC Aegeri D7-FF14-b",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "GS",
+      "backup": "MS",
+      "durationMin": 80,
       "parallel": false
     },
     {
@@ -307,7 +352,22 @@
       "spielleiter": "GS",
       "backup": "",
       "durationMin": 60,
-      "parallel": false
+      "parallel": true
+    },
+    {
+      "datum": "2026-06-13",
+      "zeit": "09:30",
+      "isoDate": "2026-06-13T09:30:00",
+      "displayDate": "Sa 13.06.26",
+      "displayTime": "09:30",
+      "team": "FF14/7",
+      "gegner": "SG Root/Ebikon 7er",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "MM",
+      "backup": "",
+      "durationMin": 80,
+      "parallel": true
     }
   ]
 }
