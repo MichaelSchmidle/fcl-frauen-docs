@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-30 08:30",
+  "updatedAt": "2026-04-10 09:08",
   "pool": [
     "GS",
     "JL",
@@ -160,21 +160,6 @@
       "parallel": false
     },
     {
-      "datum": "2026-04-11",
-      "zeit": "09:30",
-      "isoDate": "2026-04-11T09:30:00",
-      "displayDate": "Sa 11.04.26",
-      "displayTime": "09:30",
-      "team": "D/9",
-      "gegner": "FC Kickers Luzern D9d",
-      "wettbewerb": "Meisterschaft",
-      "ort": "Allmend Süd",
-      "spielleiter": "JL",
-      "backup": "MS",
-      "durationMin": 60,
-      "parallel": false
-    },
-    {
       "datum": "2026-04-18",
       "zeit": "09:30",
       "isoDate": "2026-04-18T09:30:00",
@@ -187,6 +172,21 @@
       "spielleiter": "JL",
       "backup": "MS",
       "durationMin": 80,
+      "parallel": false
+    },
+    {
+      "datum": "2026-04-21",
+      "zeit": "17:45",
+      "isoDate": "2026-04-21T17:45:00",
+      "displayDate": "Di 21.04.26",
+      "displayTime": "17:45",
+      "team": "D/9",
+      "gegner": "FC Kickers Luzern D9d",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "JL",
+      "backup": "MS",
+      "durationMin": 60,
       "parallel": false
     },
     {
