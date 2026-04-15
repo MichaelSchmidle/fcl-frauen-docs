@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10 09:08",
+  "updatedAt": "2026-04-15 20:49",
   "pool": [
     "GS",
     "JL",
@@ -310,6 +310,21 @@
       "parallel": true
     },
     {
+      "datum": "2026-06-02",
+      "zeit": "19:00",
+      "isoDate": "2026-06-02T19:00:00",
+      "displayDate": "Di 02.06.26",
+      "displayTime": "19:00",
+      "team": "FF14/9",
+      "gegner": "Weggiser SC",
+      "wettbewerb": "Meisterschaft",
+      "ort": "Allmend Süd",
+      "spielleiter": "MS",
+      "backup": "",
+      "durationMin": 80,
+      "parallel": false
+    },
+    {
       "datum": "2026-06-03",
       "zeit": "18:00",
       "isoDate": "2026-06-03T18:00:00",
@@ -321,21 +336,6 @@
       "ort": "Allmend Süd",
       "spielleiter": "GS",
       "backup": "MS",
-      "durationMin": 80,
-      "parallel": false
-    },
-    {
-      "datum": "2026-06-06",
-      "zeit": "09:30",
-      "isoDate": "2026-06-06T09:30:00",
-      "displayDate": "Sa 06.06.26",
-      "displayTime": "09:30",
-      "team": "FF14/9",
-      "gegner": "Weggiser SC",
-      "wettbewerb": "Meisterschaft",
-      "ort": "Allmend Süd",
-      "spielleiter": "MS",
-      "backup": "",
       "durationMin": 80,
       "parallel": false
     },
