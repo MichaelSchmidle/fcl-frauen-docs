@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 20:49",
+  "updatedAt": "2026-04-15 20:52",
   "pool": [
     "GS",
     "JL",
@@ -21,7 +21,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -36,7 +36,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -51,7 +51,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -66,7 +66,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "UP",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -81,7 +81,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MM",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -96,7 +96,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -111,7 +111,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "JL",
       "backup": "UP",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -126,7 +126,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "GS",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -141,7 +141,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -156,7 +156,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -171,7 +171,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "JL",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -186,7 +186,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "JL",
       "backup": "MS",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -201,7 +201,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "PH",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -216,7 +216,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "JL",
       "backup": "MS",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -231,7 +231,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MM",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -246,7 +246,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "PH",
       "backup": "MS",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -261,7 +261,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "JL",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -276,7 +276,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -291,7 +291,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -306,7 +306,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "UP",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -321,7 +321,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MS",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -336,7 +336,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "GS",
       "backup": "MS",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": false
     },
     {
@@ -351,7 +351,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "GS",
       "backup": "",
-      "durationMin": 60,
+      "durationMin": 120,
       "parallel": true
     },
     {
@@ -366,7 +366,7 @@
       "ort": "Allmend Süd",
       "spielleiter": "MM",
       "backup": "",
-      "durationMin": 80,
+      "durationMin": 120,
       "parallel": true
     }
   ]

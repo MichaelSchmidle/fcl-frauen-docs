@@ -44,8 +44,8 @@ const updatedAt = computed(() => data.value?.updatedAt || '')
 function icsUrl(m) {
   const start = m.isoDate.replace(/[-:]/g, '').replace('T', 'T') + '00'
   const startDate = new Date(m.isoDate)
-  // 90 min: covers match + buffer
-  const endDate = new Date(startDate.getTime() + 90 * 60000)
+  const durationMin = m.durationMin || 120
+  const endDate = new Date(startDate.getTime() + durationMin * 60000)
   const end = endDate.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '').replace('Z', '')
 
   const title = `Spielleitung: ${m.team} vs ${m.gegner}`
