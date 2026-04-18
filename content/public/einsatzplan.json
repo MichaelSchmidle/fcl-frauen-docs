@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15 20:52",
+  "updatedAt": "2026-04-18 11:17",
   "pool": [
     "GS",
     "JL",
@@ -169,7 +169,7 @@
       "gegner": "SG Root/Ebikon 9er",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "JL",
+      "spielleiter": "MS",
       "backup": "MS",
       "durationMin": 120,
       "parallel": false
