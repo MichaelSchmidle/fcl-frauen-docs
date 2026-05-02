@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18 11:19",
+  "updatedAt": "2026-05-02 10:25",
   "pool": [
     "GS",
     "JL",
@@ -260,7 +260,7 @@
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
       "spielleiter": "JL",
-      "backup": "",
+      "backup": "MM",
       "durationMin": 120,
       "parallel": true
     },
@@ -274,7 +274,7 @@
       "gegner": "FC Sursee gold",
       "wettbewerb": "Meisterschaft",
       "ort": "Allmend Süd",
-      "spielleiter": "MS",
+      "spielleiter": "MM",
       "backup": "",
       "durationMin": 120,
       "parallel": false
